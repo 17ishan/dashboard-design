@@ -53,12 +53,12 @@ const VolumeAndService = () => {
       {/* Legend */}
       <div className="flex justify-center items-center gap-8 mt-3 text-xs">
         <div className="flex items-center gap-2">
-          <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
+          <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
           <span className="text-gray-600">Volume:</span>
           <span className="font-semibold">{totalVolume}</span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="w-3 h-3 bg-emerald-400 rounded-full"></span>
+          <span className="w-2 h-2 bg-emerald-400 rounded-full"></span>
           <span className="text-gray-600">Services:</span>
           <span className="font-semibold">{totalServices}</span>
         </div>
