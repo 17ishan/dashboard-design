@@ -21,14 +21,14 @@ const TargetAndReality = () => {
         label: "Reality Sales",
         data: [10, 9, 8, 11, 13, 12, 11],
         backgroundColor: "#34d399", // green
-        borderRadius: 6,
+        borderRadius: 3,
         barThickness: 10,
       },
       {
         label: "Target Sales",
         data: [12, 11, 13, 14, 16, 15, 16],
         backgroundColor: "#facc15", // yellow
-        borderRadius: 6,
+        borderRadius: 3,
         barThickness: 10,
       },
     ],
