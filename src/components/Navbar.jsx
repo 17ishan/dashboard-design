@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="fixed h-20 w-7xl  flex items-center justify-between px-6 bg-white ">
+    <nav className="fixed h-20 w-7xl  flex items-center justify-between px-6 bg-white z-10">
       {/* Dashboard Title */}
       <h1 className="font-bold text-2xl text-[#1A1C2B]">Dashboard</h1>
 
