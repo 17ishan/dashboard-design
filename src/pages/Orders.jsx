@@ -198,31 +198,35 @@ const Orders = () => {
         </table>
       </div>
 
-      {/* Pagination bar like screenshot */}
-      <div className="mt-6 flex items-center justify-between">
-        <div className="flex gap-3 w-full max-w-5xl">
+      {/* Pagination bar  */}
+      <div className="mt-6 flex items-center justify-between ">
+        <div className="flex gap-3 w-full max-w-full ">
           {["1", "2", "3", "4", "5"].map((n, idx) => (
             <button
               key={n}
-              className={`flex-1 h-10 rounded-full border border-[#E5E7EB] bg-white text-sm text-[#1A1C2B] shadow-sm ${
+              className={`flex-1 h-10 rounded-full border  border-[#E5E7EB] bg-white text-sm text-[#1A1C2B] shadow-sm hover:bg-gray-100  ${
                 idx === 4 ? "font-medium" : ""
               }`}
             >
               {n}
             </button>
           ))}
-          <button className="h-10 w-16 rounded-full border border-[#E5E7EB] bg-white shadow-sm flex items-center justify-center">
+          <button className="h-10 w-40 rounded-full border border-[#E5E7EB] bg-white shadow-sm flex items-center justify-center hover:bg-gray-100 ">
             <ChevronLeft className="w-4 h-4 text-[#1A1C2B]" />
           </button>
-          <button className="h-10 w-16 rounded-full border border-[#E5E7EB] bg-white shadow-sm flex items-center justify-center">
+          <button className="h-10 w-40 rounded-full border border-[#E5E7EB] bg-white shadow-sm flex items-center justify-center hover:bg-gray-100 ">
             <ChevronRight className="w-4 h-4 text-[#1A1C2B]" />
           </button>
         </div>
           
-        <div className="ml-6 flex items-center gap-6 text-sm text-gray-500 ">
+        
+      </div>
+        
+        <div className="ml-6 flex items-center gap-6 text-xs text-gray-500  mt-6">
           
           <span className="whitespace-nowrap">© 2025 SnowUI</span>
-          <a href="#" className="hover:underline">
+          <div className="flex  ml-200 space-x-6 ">
+            <a href="#" className="hover:underline">
             About
           </a>
           <a href="#" className="hover:underline">
@@ -231,8 +235,9 @@ const Orders = () => {
           <a href="#" className="hover:underline">
             Contact Us
           </a>
+          </div>
         </div>
-      </div>
+
     </div>
   );
 };
