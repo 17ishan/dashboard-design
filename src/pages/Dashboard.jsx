@@ -10,7 +10,7 @@ import VolumeAndService from "../components/charts/VolumeAndService";
 
 const Dashboard = () => {
   return (
-    <div className=" bg-slate-100 min-h-screen p-3 px-4  pb-6">
+    <div className=" bg-slate-100 min-h-screen p-3 px-4 mt-20 pb-6">
 
       <div className="space-y-3">
         {/* 1st row */}

@@ -15,52 +15,52 @@ const navItems = [
   {
     name: "Dashboard",
     icon: <ChartPie />,
-    path: "/dashboard"
+    path: "/dashboard",
   },
   {
     name: "Leaderboard",
     icon: <ChartNoAxesColumn />,
-    path: "/leaderboard"
+    path: "/leaderboard",
   },
   {
     name: "Order",
     icon: <ShoppingCart />,
-    path: "/order"
+    path: "/order",
   },
   {
     name: "Products",
-    icon: <Handbag  />,
-    path: "/products"
+    icon: <Handbag />,
+    path: "/products",
   },
   {
     name: "Sales Report",
-    icon: <ChartLine  />,
-    path: "/sales"
+    icon: <ChartLine />,
+    path: "/sales",
   },
   {
     name: "Messages",
-    icon: <MessageSquareMore  />,
-    path: "/messages"
+    icon: <MessageSquareMore />,
+    path: "/messages",
   },
   {
     name: "Setting",
-    icon: <Settings  />,
-    path: "/settings"
+    icon: <Settings />,
+    path: "/settings",
   },
   {
     name: "Sign Out",
-    icon: <LogOut  />,
-    path: "/signout"
+    icon: <LogOut />,
+    path: "/signout",
   },
 ];
 
 const Sidebar = () => {
   return (
-    <div className="p-7 border-gray-400 h-full flex flex-col justify-between">
+    <div className="fixed top-0 left-0 h-screen w-[240px] p-7  flex flex-col justify-between bg-white">
       {/* Sidebar Header */}
       <div>
         <div className="flex gap-4 items-center justify-center w-full mb-4 cursor-pointer">
-          <LayoutDashboard color="#0e13a4" />{" "}
+          <LayoutDashboard color="#0e13a4" />
           <span className="text-2xl font-semibold">Dabang</span>
         </div>
 
@@ -86,7 +86,7 @@ const Sidebar = () => {
       </div>
 
       {/* Bottom Card */}
-      <div className="bg-indigo-500 text-white p-5 rounded-xl flex flex-col items-center text-center mb-25 ">
+      <div className="bg-indigo-500 text-white p-5 rounded-xl flex flex-col items-center text-center mb-4">
         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mb-3">
           <LayoutDashboard className="text-indigo-500" />
         </div>
