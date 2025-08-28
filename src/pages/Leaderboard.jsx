@@ -22,7 +22,7 @@ const Leaderboard = () => {
       {/* Dropdown */}
       <div className="mb-6">
         <label className="text-[#1A1C2B] font-medium mr-2">Showing :</label>
-        <select className="border border-[#E5E7EB] rounded-xl px-3 py-1 text-[#1A1C2B] w-62 h-8 text-center">
+        <select className="border border-[#E5E7EB] rounded-xl px-3 py-1 text-[#1A1C2B] w-62 h-8 text-center bg-white">
           <option>Overall</option>
           <option>Monthly</option>
         </select>
@@ -31,7 +31,7 @@ const Leaderboard = () => {
       {/* Medal Cards */}
       <div className="flex gap-8 mb-8 justify-center items-end">
         {/* 2nd Place */}
-        <div className="flex-1 bg-white shadow-lg rounded-3xl p-4 text-center h-28 flex flex-col justify-center">
+        <div className="flex-1 bg-[#FCE6F3] shadow-lg rounded-3xl p-4 text-center h-28 flex flex-col justify-center">
           <span className="mx-auto flex items-center justify-center w-10 h-10">
             <img
               src="./Silver.png"
@@ -43,7 +43,7 @@ const Leaderboard = () => {
         </div>
 
         {/* 1st Place */}
-        <div className="flex-1 bg-white shadow-lg rounded-3xl p-6 text-center h-36 flex flex-col justify-center">
+        <div className="flex-1 bg-[#FFEDD4] shadow-lg rounded-3xl p-6 text-center h-36 flex flex-col justify-center">
           <span className="mx-auto flex items-center justify-center w-12 h-12">
             <img
               src="./Gold.png"
@@ -55,7 +55,7 @@ const Leaderboard = () => {
         </div>
 
         {/* 3rd Place */}
-        <div className="flex-1 bg-white shadow-lg rounded-3xl p-4 text-center h-28 flex flex-col justify-center">
+        <div className="flex-1 bg-[#DCFCE6] shadow-lg rounded-3xl p-4 text-center h-28 flex flex-col justify-center">
           <span className="mx-auto flex items-center justify-center w-10 h-10">
             <img
               src="./Bronze.png"
@@ -81,7 +81,7 @@ const Leaderboard = () => {
             {data.map((item, idx) => (
               <tr
                 key={idx}
-                className="bg-[#F3F4F6] -md rounded-3xl overflow-hidden"
+                className="bg-white  rounded-3xl overflow-hidden"
               >
                 <td className="p-3 rounded-l-2xl">{item.username}</td>
                 <td className="p-3">{item.rank}</td>
